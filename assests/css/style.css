@@ -1,0 +1,603 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../font/OpenSans-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../font/OpenSans-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../font/OpenSans-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../font/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../font/OpenSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url(../font/RobotoSlab-ExtraBold.ttf);
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.containar {
+    max-width:1300px;
+    width: 100%;
+    padding:0 25px;
+    margin: 0 auto;
+}
+/* =======================================global-style============================= */
+a {
+  text-decoration: none;
+}
+.text-right {
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+ul li {
+  list-style: none;
+}
+/* =======================================end-global-style============================= */
+
+/* ==================================================.topbar-section============================ */
+.topbar-section{
+    background: #eeeeee;
+    padding: 15px 0;
+}
+.topbar-section .topbar-parrant{
+    display: flex;
+    justify-content: space-between;
+}
+.topbar-section .topbar-parrant .item p{
+    font-family: 'Roboto Slab', 'serif';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.topbar-section .topbar-parrant .social-icon ul{
+    display: flex;
+    justify-content: space-around;
+}
+.topbar-section .topbar-parrant .social-icon ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.topbar-section .topbar-parrant .social-icon ul li a{
+    color:black;
+}
+.topbar-section .topbar-parrant .social-icon ul a:hover{
+    color:red;
+}
+.topbar-section .topbar-parrant .social-icon ul .fb:hover{
+    color:rgb(232, 232, 241);
+    background: blue;
+}
+/* ===================================header-section============================ */
+.header-section{
+  padding:15px 0;
+}
+.header-parrant{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-parrant .header-item p{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.header-parrant .header-item p a{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.header-parrant .header-item p a:hover{
+  color: blue;
+}
+.header-parrant .header-item h4{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: end;
+}
+.header-item h4 a{
+  color: red; 
+}
+.header-item h4 a:hover{
+  color:blue;
+}
+/* ==================================nav-bar========================================= */
+.nav-bar-section{
+    background: black;
+}
+.nav-bar-section .nav-bar-parrant ul{
+    display: flex;
+    justify-content: center;
+}
+.nav-bar-section .nav-bar-parrant ul li a{
+    color: #fff;
+    padding: 40px 33px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    transition: .5s;
+}
+.nav-bar-section .nav-bar-parrant ul li a:hover{
+    background: red;
+}
+.active{
+  background: red;
+}
+/* ======================================bannar-section==================================== */
+.bannar-section{
+    padding: 245px 0;
+    background: url("../img/bannar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.bannar-section .bannar-parrant {
+  display: flex;
+  justify-content: center;
+}
+.bannar-section .bannar-content {
+  padding: 22px 27px;
+  background: #000;
+  opacity: .8;
+  color: #fff;
+  text-align: center;
+}
+.bannar-section .bannar-parrant h1 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  color: #fff; 
+}
+.bannar-section .bannar-parrant p {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.parrant-bannar .row {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  background: red;
+}
+.bannar-section .dot-circle-parrant {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -190px;
+}
+.bannar-section .dot-circle-parrant .dot:hover{
+  background: #fff;
+}
+/* ===================================house============================================== */
+ .house-section .house-parrant{
+  display: flex;
+  padding: 75px 0;
+  position: relative;
+}
+.house-section .house-parrant .house-content h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+.house-section .house-parrant .house-content{
+  max-width: 660px;
+}
+.house-section .house-parrant .house-content p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 660px;
+}
+.house-section .house-parrant .house-image img{
+ margin-left: 100px;
+}
+.house-section .house-parrant .house-content{
+  position: relative;
+}
+.house-section .house-parrant .house-content::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/NLG-Homepage-V004.png");
+  background-repeat: no-repeat;
+  background-size: 370px; 
+  opacity: .2;
+  left: 150px;
+  bottom: -30px;
+}
+.learn-btn a{
+  padding: 13px 26px;
+  text-decoration: none;
+  margin-top: 70px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  display: inline-block;
+  border: 2px solid black;
+  color: black;
+  text-transform: capitalize;
+}
+.learn-btn a:hover{
+  background: red;
+  color:#fff;
+  transition: 1s;
+}
+
+/* ====================================area-practice========================================== */
+.area-section{
+  background-color: #eeeeee ;
+  padding-bottom: 50px;
+} 
+.area-section .area-heading{
+  text-align: center;
+} 
+.area-section .area-heading h2{
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+.area-section .area-heading p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+.area-section .area-parrant{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 44px;
+  column-gap: 40px;
+  justify-content: center;
+}
+.area-section .area-parrant .area-item{
+  background: #fff;
+  text-align: center;
+  padding: 27px;
+}
+.area-section .area-parrant .area-item:hover{
+  box-shadow: 3px 5px 17px #000;
+}
+.area-section .area-parrant .area-item h2{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  padding: 7px;
+  
+}
+.area-section .area-parrant .area-item p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif; 
+  line-height: 20px;
+}
+.area-section .area-parrant .area-item .learn-btn1 a{
+    padding: 13px 26px;
+    text-decoration: none;
+    margin-top: 29px;
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+ }
+ .area-parrant .area-item .learn-btn1 a:hover{
+    background: red;
+    color:#fff;
+    transition: 1s;
+}
+/* ==========================================legal-secton======================== */
+.legal-section .legal-parrant .legal-heading{
+  text-align: center;
+ padding-top: 60px;
+}
+.legal-section .legal-parrant .legal-heading h3{
+  font-size: 36px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+.legal-section .legal-parrant .legal-heading img{
+  margin-left: 50px;
+  padding: 10px 0;
+}
+.legal-section .legal-parrant .legal-heading p{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-top: 10px;
+}
+/* ======================================video-setion=============================== */
+.video-section{
+  padding: 58px;
+}
+.video-section .video-parrant{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+}
+.video-section .video-parrant video{
+  width: 100%;
+  height: 100%;
+}
+/* =======================================contuct-section====================================== */
+.contuct-section{
+  padding: 60px 0  90px;
+  background: url("../img/bannar2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+} 
+.contuct-section .contuct-parrant .contuct-content{
+  text-align: center;
+  color: #fff;
+}
+.contuct-section .contuct-parrant .contuct-content h4{
+  font-size:48px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700px;
+  padding-bottom: 20px;
+}
+.contuct-section .contuct-parrant .contuct-content p{
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400px;
+  padding-bottom: 42px;
+  display: inline-block;
+}
+.contuct-section .contuct-content .contuct-btn a{
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  color:#fff;
+  text-transform: capitalize;
+}
+.contuct-section .contuct-content .contuct-btn a:hover{
+  background: red;
+  color:#fff;
+  transition: .5s;
+}
+/* --------------------------------leatest-blog------------------------------------------- */
+.leatest-blog-section {
+  margin: 60px 0;
+}
+.leatest-blog-section .leatest-blog-heading h3{
+  font-size: 36px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700px;
+}
+.leatest-blog-section .leatest-blog-parrant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  padding: 35px 0;
+  position: relative;
+}
+.leatest-blog-section .leatest-blog-parrant .blog-img{
+  display: flex;
+}
+.leatest-blog-section .leatest-blog-parrant .date h2{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 17px;
+  text-transform: uppercase;
+}
+.leatest-blog-section .leatest-blog-parrant .date{
+  position: absolute;
+  background: #000;
+  color:#fff;
+  text-align: center;
+  width: 97px;
+  height: 102px;
+  bottom: 258px;
+  margin-left: 25px;
+  transition: .5s;
+}
+.leatest-blog-section .leatest-blog-parrant .date:hover{
+  box-shadow: 3px 5px 10px gray;
+  opacity: .8;
+}
+.blog-content .icon ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 10px 0;
+}
+.blog-content .icon ul li a{
+  margin-right: 30px;
+  color: gray;
+}
+.blog-content .icon ul li a:hover{
+  color:red;
+}
+.blog-content .icon .red{
+  color: red;
+}
+.leatest-blog-section .leatest-blog-parrant .blog-under-content h3{
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.leatest-blog-section .leatest-blog-parrant .blog-under-content p{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+.leatest-blog-section .blog-btn a {
+  padding: 11px 20px;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+  text-transform: capitalize;
+  border: 2px solid #000;
+  margin-top: 30px;
+  display: inline-block;
+  transition: .5s;
+}
+.leatest-blog-section .blog-btn a:hover{
+  background: red;
+  color:rgb(232, 232, 241)
+}
+/* ==================================footer-section=========================================== */
+.footer-section {
+  margin-top: 100px 0;
+  background: #282628;
+  padding-top: 55px;
+}
+.footer-section ul {
+  list-style: none;
+}
+.footer-section .footer-parrant {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.footer-section .footer-parrant .footer-items h4{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;;
+}
+.footer-parrant p {
+  max-width: 434px;
+  line-height: 25px;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #767676;
+}
+.footer-section .footer-icon ul {
+  display: flex;
+}
+.footer-section .footer-icon ul li{
+  margin-right: 30px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 43px;
+  transition: .5s;
+  margin-top: 50px;
+  border: 1px solid;
+  color: #757575;
+}
+.footer-section .footer-icon ul li a{
+  color: #757575;
+}
+.footer-section .footer-icon ul li:hover{
+  background: #fff;
+}
+.footer-section .footer-icon ul li a:hover{
+  color: red;
+}
+.footer-manue li {
+  margin-top: 13px;
+  border-bottom: 1px dashed #757575;
+  padding: 9px 0;
+}
+.footer-section .footer-parrant .footer-manue ul li a{
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #757575;
+  text-transform: capitalize;
+}
+.footer-section .footer-parrant .footer-manue ul li a:hover{
+  color: #fff;
+}
+.footer-section .footer-parrant .locetion-div ul li{
+  padding: 12px 0;
+}
+.footer-section .footer-parrant .locetion-div ul li a{
+  color: #949494;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-section .footer-parrant .locetion-div ul li a:hover{
+  color:#fff;
+}
+.footer-section .footer-parrant .footer-items-3 h4{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 12px;
+}
+.footer-section .footer-parrant .locetion-div ul li span{
+  color: #fff;
+}
+.footer-section .footer-div{
+  background: #000;
+  color: #fff; 
+  padding: 54px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+.footer-section .footer-div p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575
+}
+
